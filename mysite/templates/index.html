@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <title> 
             {% block title %}
-                {% page_attribute page_title %} - {{ request.site.name }}
+                {% page_attribute page_title %}
             {% endblock title %}
         </title>
         <link rel="shortcut icon" href="../favicon.ico">
@@ -425,7 +425,7 @@
 
         .csstransforms .sublinks li > a {
             position: absolute;
-            top:1em;
+ 	    top:1em;
             right: -6.25em;
             display: block;
             width: 14.5em;
@@ -454,8 +454,8 @@
             height: 30px;
             overflow: hidden;
             top: 1em;
-            margin-top: 10%;
-            margin-left: -3%;
+	    margin-top: 8%;
+	    margin-left: -3%;
             display: block;
             font-size: .5em;
             font-weight: 700;
@@ -520,10 +520,10 @@
         }
 
         .csstransforms .sublinks li:nth-child(6) {
-            -webkit-transform: rotate(140deg) skew(60deg);
-            -moz-transform: rotate(140deg) skew(60deg);
-            -ms-transform: rotate(140deg) skew(60deg);
-            transform: rotate(140deg) skew(60deg);
+            -webkit-transform: rotate(123deg) skew(60deg);
+            -moz-transform: rotate(123deg) skew(60deg);
+            -ms-transform: rotate(123deg) skew(60deg);
+            transform: rotate(123deg) skew(60deg);
         }
 
         .csstransforms .sublinks li:nth-child(7) {
@@ -748,22 +748,32 @@
             $("#showDiv").click(function(){   
                 $("#sublinks2").hide();
                 $("#sublinks3").hide();
+		$("#sublinks4").hide();
                 $("#sublinks1").fadeToggle();
             });
             $("#showDiv2").click(function(){
                 $("#sublinks1").hide();
                 $("#sublinks3").hide();
+		$("#sublinks4").hide();
                 $("#sublinks2").fadeToggle();
             });
             $("#showDiv3").click(function(){
                 $("#sublinks1").hide();
                 $("#sublinks2").hide();
+		$("#sublinks4").hide();
                 $("#sublinks3").fadeToggle();
+            });
+	    $("#showDiv4").click(function(){
+                $("#sublinks1").hide();
+                $("#sublinks2").hide();
+                $("#sublinks3").hide();
+                $("#sublinks4").fadeToggle();
             });
             $("#cn-button").click(function(){
                 $("#sublinks1").hide();
                 $("#sublinks2").hide();
                 $("#sublinks3").hide();
+		$("#sublinks4").hide();
             });
         });
         </script>
@@ -812,6 +822,7 @@
                         <li><a href="/en/gallery/news/"><span>News</span></a></li>
                     </ul>
                 </div>
+
         </div><!-- /container2 -->
 
         <div class="slide-wrap">

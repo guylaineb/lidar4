@@ -356,7 +356,7 @@
                 <li><a href="/en/about" title="Main"><span><img src="{%static "/static/png/home.png" %}" /></span></a></li>
                 <li><a href="/en/priority-rivers" title="Priority Rivers"><span><img src="{%static "/static/png/rivers.png" %}" /></span></a></li>
                 <li><a href="/en/progress-reports" title="Progress Reports"><span><img src="{%static "/static/png/progressreport.png" %}" /></span></a></li>
-                <li><a href="/en/report-flood" title="Report a Flood"><span><img src="{%static "/static/png/report.png" %}" /></span></a></li>
+                 <li><a href="/en/flood-watch" title="Flood Watch"><span><img src="{%static "/static/png/report.png" %}" /></span></a></li>
                 <li><a href="/en/gallery" title="Gallery"><span><img src="{%static "/static/png/gallery.png" %}" /></span> </a></li>
                 <li><a href="/en/members" title="Members"><span><img src="{%static "/static/png/members.png" %}" /></span> </a></li>
                 <li><a href="/en/contact-us" title="Contact Us"><span><img src="{%static "/static/png/contact.png" %}" /></span> </a></li>
@@ -426,10 +426,6 @@
 <script>
 $(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
-    
-    $('area').on('click', function() {
-        alert($(this).attr('alt') + ' clicked');
-    });
 });
 </script>
 
